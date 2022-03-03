@@ -1,0 +1,50 @@
+$breakpoints:('sm':510px , 'md':768px ,'lg':1024px);
+
+//colors:
+$first-color: #58b820;
+$second-color: #ffc036;
+$black:rgba(56, 56, 56, 0.863);
+
+// hovers
+$first-color-h:#48971b;
+$second-color-h:#e9af33;
+
+// font-size:
+$size-9: 1rem;
+$size-8: 1.3rem;
+$size-7: 1.5rem;
+$size-6: 1.8rem;
+$size-5: 2rem;
+$size-4: 2.3rem;
+$size-3: 2.5rem;
+$size-2: 2.8rem;
+$size-1: 3rem;
+
+
+// spaceses:
+$space-light: 0.3rem;
+$space-0: 0.5rem;
+$space-1: 1rem;
+$space-2: 1.5rem;
+$space-3: 2rem;
+$space-4: 2.5rem;
+$space-5: 3rem;
+
+// utilities:
+$shadow-1: 0px 0px 36px -14px rgba(0,0,0,0.52);
+$shadow-2: 0px 3px 21px -2px rgba(0,0,0,0.61);
+$shadow-b: 0px 5px 4px 0px rgb(0 0 0 / 10%);
+
+// border-radios:
+$round-1: 5px;
+$round-2: 10px;
+
+// border
+
+$border-light: 1px solid #e0e0e0;
+$border-normal: 5px solid #e0e0e0;
+
+//transitions:
+$trans-1: 0.2s all;
+$trans-2: 0.3s all;
+$trans-3: 0.4s all;

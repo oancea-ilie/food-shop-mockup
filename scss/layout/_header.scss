@@ -1,0 +1,128 @@
+header{
+    background-color: $first-color;
+    width: 100%;
+    .container{
+        border-bottom: $border-light;
+        padding: 1rem;
+        height: 4.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .brand{
+            font-weight: 500;
+            font-size: $size-8;
+            color: white;
+            transition: $trans-3;
+        }
+        .brand:hover{
+            color: $black;
+        }
+        i{
+            transition: $trans-3;
+            cursor: pointer;
+            color: white;
+            font-size: $size-7;
+        }
+        i:hover{
+            color: $black;
+        }
+        .nav-toggler{
+            display: none;
+            a{
+                transition: $trans-3;
+                color: white;
+                margin-bottom: 1rem;
+                font-size: $size-9;
+            }
+            a:hover{
+                color: $black;
+            }
+            .login{
+                background-color: white;
+                color: $black;
+                padding: 0.5rem 1rem;
+                border-radius: $round-1;
+            }
+            .login:hover{
+                background-color: $black;
+                color: white;
+            }
+        }
+    }
+    .nav-collapse{
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: $first-color;
+        padding-top: 1rem;
+        height: 140px;
+        animation-name: ani;
+        animation-duration: 0.5s;
+        a{
+            transition: $trans-3;
+            color: white;
+            margin-bottom: 1rem;
+            font-size: $size-9;
+        }
+        a:hover{
+            color: $black;
+        }
+        .login{
+            background-color: $black;
+            padding: 0.5rem 1rem;
+            border-radius: $round-1;
+        }
+        .login:hover{
+            background-color: white;
+            color: $black;
+        }
+    }
+    
+
+    @keyframes ani {
+        0%{
+            height: 0px;
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+            height: 140px;
+        }
+    }
+
+    @include mq("md"){
+        .container{
+            padding: 1rem 2rem;
+            i{
+                display: none;
+            }
+            .brand{
+                font-size: $size-7;
+            }
+            .nav-toggler{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+                margin-top: 1rem;
+                a{
+                    font-weight: 300;
+                    font-size: $size-8;
+                }
+            }
+        }
+        .nav-collapse{
+            display: none;
+        }
+    }
+
+    @include mq("lg"){
+        .container{
+            border-bottom: none;
+            margin: auto;
+            max-width: 1250px;
+        }
+    }
+}

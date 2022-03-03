@@ -1,0 +1,84 @@
+.add-section{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.493);
+
+    .container{
+        width: 90%;
+        box-shadow: $shadow-b;
+        max-width: 350px;
+        background-color: white;
+        border-radius: 5px;
+        position: relative;
+        color: $black;
+
+        .title{
+            margin-top: 1.5rem;
+            i{
+                font-size: $size-8;
+                position: absolute;
+                right: 10px;
+                top: 7px;
+                transition: $trans-3;
+                cursor: pointer;
+            }
+            i:hover{
+                color: $first-color;
+            }
+            h1{
+                margin: 0;
+                margin-bottom: 1rem;
+                text-align: center;
+                font-size: $size-7;
+            }
+        }
+
+        .card{
+            padding: 0 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            p{
+                
+            }
+            input{
+                color: $first-color;
+            }
+
+           
+        }
+
+        .add{
+            border-radius: 0 0 5px 5px;
+            margin-top: 1rem;
+            display: inline-block;
+            background-color: $first-color;
+            width: 100%;
+            text-align: center;
+            font-size: $size-9;
+            font-weight: 500;
+            color: white;
+            padding: 0.5rem;
+            transition: $trans-3;
+        }
+        .add:hover{
+            background-color: $first-color-h;
+        }
+    }
+
+    @include mq("md"){
+        
+        .container{
+            max-width: 450px;
+        }
+    }
+    
+}

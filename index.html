@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food-Shop</title>
+
+    <!-- google fond -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="#" class="brand">Food-Shop</a>
+            <i class="fas fa-bars"></i>
+            <nav class="nav-toggler">
+                <a href="#">Home</a>
+                <a href="#">Categories</a>
+                <a href="#" class="login">Login</a>
+            </nav>
+        </div>
+        <nav class="nav-collapse">
+            <a href="#">Home</a>
+            <a href="#">Categories</a>
+            <a href="#" class="login">Login</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="main-header">
+            <a href="#" class="add"><i class="fas fa-plus-square"></i></a>
+            <select>
+                <option>Recent</option>
+                <option>Price desc</option>
+                <option>Price asc</option>
+            </select>
+        </div>
+        <div class="container">
+            <div class="card">
+                <img src="img/fruct.png" alt="">
+                <div class="text">
+                    <h2>Name: <span>Portocala</span> </h2>
+                    <p>Category: <span>Fructe</span> </p>
+                    <h3>Price: <span>10$</span></h3>
+                </div>
+                <a href="#" class="delete">Delete</a>
+            </div>
+            <div class="card">
+                <img src="img/fruct.png" alt="">
+                <div class="text">
+                    <h2>Name: <span>Portocala</span> </h2>
+                    <p>Category: <span>Fructe</span> </p>
+                    <h3>Price: <span class="price">10$</span></h3>
+                </div>
+                <a href="#" class="delete">Delete</a>
+            </div>
+            <div class="card">
+                <img src="img/fruct.png" alt="">
+                <div class="text">
+                    <h2>Name: <span>Portocala</span> </h2>
+                    <p>Category: <span>Fructe</span> </p>
+                    <h3>Price: <span>10$</span></h3>
+                </div>
+                <a href="#" class="delete">Delete</a>
+            </div>
+            <div class="card">
+                <img src="img/fruct.png" alt="">
+                <div class="text">
+                    <h2>Name: <span>Portocala</span> </h2>
+                    <p>Category: <span>Fructe</span> </p>
+                    <h3>Price: <span>10$</span></h3>
+                </div>
+                <a href="#" class="delete">Delete</a>
+            </div>
+        </div>
+    </main>
+
+    <section class="add-section">
+        <div class="container">
+            <div class="title">
+                <i class="fas fa-times"></i>
+                <h1>Add Product</h1>
+            </div>
+            <div class="card">
+                <p>Name:</p>
+                <input type="text" class="name">
+                <p>Category:</p>
+                <input type="text" class="category">
+                <p>Price:</p>
+                <input type="number" class="price">
+            </div>
+            <a href="#" class="add">Add</a>
+        </div>
+    </section>
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
